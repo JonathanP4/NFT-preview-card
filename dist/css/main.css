@@ -1,0 +1,126 @@
+:root {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+@media (max-width: 425px) {
+  body {
+    padding: 1rem;
+    min-height: 100svh;
+  }
+}
+
+.text-soft-blue, .card__offer span:nth-child(2) {
+  color: hsl(215deg, 51%, 70%);
+}
+
+.text-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.card {
+  background-color: hsl(216deg, 50%, 16%);
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 300px;
+  max-width: 350px;
+}
+.card__img-container {
+  position: relative;
+}
+.card__img-container__hover-img-container {
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 10;
+  background-color: hsla(178deg, 100%, 50%, 0.6);
+  opacity: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-content: center;
+}
+.card__img-container__hover-img-container:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.card__img-container__hover-img-container img {
+  min-width: 40px;
+}
+.card__img-container__img {
+  border-radius: 1rem;
+}
+.card__title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+}
+.card__title:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+.card__description {
+  font-weight: 300;
+}
+.card__offer {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+.card__offer span {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.card__offer span:nth-child(1) {
+  color: hsl(178deg, 100%, 50%);
+}
+.card__offer span:nth-child(2) {
+  font-weight: 300;
+}
+.card__profile {
+  display: flex;
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+.card__profile__img {
+  border: 2px solid hsl(215deg, 51%, 70%);
+  border-radius: 50%;
+  width: 40px;
+}
+.card__profile__attribution {
+  cursor: pointer;
+  text-decoration: none;
+}
+.card__profile__attribution:hover {
+  text-decoration: underline;
+  color: hsl(178deg, 100%, 50%);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+:root {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+* {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
